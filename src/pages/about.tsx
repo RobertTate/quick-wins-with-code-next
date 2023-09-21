@@ -80,6 +80,7 @@ export default function About() {
     <Fragment>
       <Head>
         <title>About | Quick Wins With Code</title>
+        <meta property="og:title" content="About"></meta>
       </Head>
       <Slice modifier="Slice--hero" utilities="u-bg3 u-c2">
         <Block>

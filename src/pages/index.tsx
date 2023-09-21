@@ -21,6 +21,7 @@ export default function Home({ collection }: HomePageProps) {
     <>
       <Head>
         <title>Home | Quick Wins With Code</title>
+        <meta property="og:title" content="Home"></meta>
       </Head>
       <Slice modifier="Slice--hero" utilities="u-c2">
         <Block>
