@@ -1,0 +1,20 @@
+@import "../partials/mediaMixins.scss";
+@import "../partials/spacing.scss";
+
+.Block {
+  $this: &;
+  display: flex;
+  flex-direction: column;
+
+  &--withSpace {
+    padding: $spacing-6 0;
+
+    @include lap-up {
+      padding: $spacing-7 0;
+    }
+  }
+
+  @include lap-up {
+    flex-direction: row;
+  }
+}

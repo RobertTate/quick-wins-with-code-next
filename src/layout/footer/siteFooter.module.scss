@@ -1,0 +1,45 @@
+@import "../../partials/fontSizes.scss";
+@import "../../partials/sitePalette.scss";
+@import "../../partials/mediaMixins.scss";
+@import "../../partials/spacing.scss";
+
+.SiteFooter {
+  background-color: $smoky-black;
+  border-top: 1px solid $white;
+  color: $white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-size-small;
+
+    @include palm {
+      flex-direction: column;
+    }
+
+    a {
+      color: $special-link;
+      text-decoration: none;
+  
+      &:visited {
+        color: $special-link;
+      }
+  
+      &:hover {
+        color: $special-link-hover;
+      }
+    }
+  }
+
+  @include palm {
+    &-content div:first-child {
+      padding-bottom: $spacing-half;
+    }
+    &-content div:last-child {
+      display: none;
+    }
+  }
+}

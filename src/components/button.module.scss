@@ -1,0 +1,29 @@
+@import "../partials/spacing.scss";
+@import "../partials/fontSizes.scss";
+@import "../partials/sitePalette.scss";
+@import "../partials/mediaMixins.scss";
+
+.Button {
+  display: block;
+  width: fit-content;
+  border: 2px solid $white;
+  border-radius: 10px;
+  padding: $spacing-1 $spacing-1;
+  color: $white;
+  text-decoration: none;
+  font-size: $font-size-small;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  &--dark {
+    border: 2px solid $smoky-black;
+    color: $smoky-black;
+
+    &:hover {
+      background-color: $button-hover-color-dark;
+    }
+  }
+}

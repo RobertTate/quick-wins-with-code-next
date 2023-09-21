@@ -1,0 +1,128 @@
+@import "../partials/spacing.scss";
+@import "../partials/mediaMixins.scss";
+@import "../partials/sitePalette.scss";
+@import "../partials/animations.scss";
+
+$block-end-spacing: 2rem;
+
+@media only screen and (max-width: 390px) {
+  html {
+    width: fit-content;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Alata";
+  line-height: 1.5;
+
+  p {
+    margin-block-start: 0;
+    margin-block-end: $block-end-spacing;
+
+    a {
+      color: $anchor-color;
+      text-decoration: none;
+  
+      &:visited {
+        color: $anchor-color;
+      }
+  
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+
+  h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+
+.o {
+  &-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: $spacing-half $spacing-2;
+
+    @media only screen and (min-width: 1250px) {
+      padding: $spacing-half 0;
+    }
+
+    @include palm {
+      min-width: calc($palm-start);
+    }
+
+    @include lap-up {
+      min-width: calc($lap-start - 100px);
+    }
+
+    @include lap-wide-up {
+      min-width: calc($lap-wide-start - 200px);
+    }
+
+    @include desk-up {
+      min-width: calc($desk-start - 200px);  
+    }
+
+    @include wall-up {
+      min-width: calc($wall-start - 200px);
+    }
+  }
+}
+
+.u {
+  &-spacing-half {
+    margin-bottom: $spacing-half;
+  };
+
+  &-spacing-1 {
+    margin-bottom: $spacing-1;
+  }
+
+  &-spacing-2 {
+    margin-bottom: $spacing-2;
+  }
+
+  &-spacing-3 {
+    margin-bottom: $spacing-3;
+  }
+
+  &-spacing-4 {
+    margin-bottom: $spacing-4;
+  }
+
+  &-spacing-5 {
+    margin-bottom: $spacing-4;
+  }
+
+  &-spacing-6 {
+    margin-bottom: $spacing-5;
+  }
+
+  &-bg1 {
+    background-color: $smoky-black;
+  }
+
+  &-bg2 {
+    background-color: $space-cadet;
+  }
+
+  &-bg3 {
+    background-color: $space-cadet-light;
+  }
+
+  &-c1 {
+    color: $white;
+  }
+
+  &-c2 {
+    color: $smoky-black;
+  }
+}

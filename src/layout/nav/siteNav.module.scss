@@ -1,0 +1,67 @@
+@import '../../partials/mediaMixins.scss';
+@import '../../partials/fontSizes.scss';
+@import '../../partials/sitePalette.scss';
+@import '../../partials/boxShadows.scss';
+
+.SiteNav {
+  display: block;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $smoky-black;
+  border-bottom: 1px solid $white;
+  z-index: 1;
+  transition: transform 0.6s;
+
+  &--hidden {
+    transform: translateY(-55px);
+  }
+
+  &--visible {
+    transform: translateY(0px);
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-size-small;
+
+    @include lap-up {
+      font-size: $font-size-medium;
+    }
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+  }
+
+  &-links {
+    display: flex;
+  }
+
+  &-content a {
+    padding: 0 1rem 0 0;
+    text-decoration: none;
+    color: $special-link;
+    text-decoration: none;
+
+    &:visited {
+      color: $special-link;
+    }
+
+    &:hover {
+      color: $special-link-hover;
+    }
+
+    @include lap-up {
+      padding: 0 1.5rem 0 0;
+    }
+  }
+
+  &-content a:last-child {
+    padding: 0;
+  }
+}

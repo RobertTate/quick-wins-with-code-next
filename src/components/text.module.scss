@@ -1,0 +1,72 @@
+@import "../partials/mediaMixins.scss";
+@import "../partials/fontSizes.scss";
+
+.Text {
+  display: block;
+
+  &--heroLede {
+    max-width: 16rem;
+
+    @include lap-up {
+      max-width: 25rem;
+    }
+  }
+
+  &--italics {
+    font-style: italic;
+  }
+
+  &--xs {
+    @include palm {
+      font-size: $font-size-xs;
+    }
+    @include lap-up {
+      font-size: $font-size-small;
+    }
+  }
+
+  &--small {
+    @include palm {
+      font-size: $font-size-small;
+    }
+    @include lap-up {
+      font-size: $font-size-medium;
+    }
+  }
+
+  &--medium {
+    @include palm {
+      font-size: $font-size-medium;
+    }
+    @include lap-up {
+      font-size: $font-size-large;
+    }
+  }
+
+  &--large {
+    @include palm {
+      font-size: $font-size-large;
+    }
+    @include lap-up {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &--xl {
+    @include palm {
+      font-size: $font-size-xl;
+    }
+    @include lap-up {
+      font-size: $font-size-xxl;
+    }
+  }
+
+  &--xxl {
+    @include palm {
+      font-size: $font-size-xxl;
+    }
+    @include lap-up {
+      font-size: $font-size-xxxl;
+    }
+  }
+}

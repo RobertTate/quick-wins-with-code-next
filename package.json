@@ -9,14 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.17.2",
+    "@fontsource/alata": "^5.0.8",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@types/node": "20.6.2",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "contentful": "^10.5.2",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.67.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "cf-content-types-generator": "^2.12.8",
+    "contentful-cli": "^2.8.11"
   }
 }
