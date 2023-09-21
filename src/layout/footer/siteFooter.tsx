@@ -11,7 +11,7 @@ export default function SiteFooter() {
           <Link href={`/about`}>Robert Tate</Link> made this site with <a href="https://nextjs.org/" target="_blank" rel="noreferrer">next.js</a>.
         </div>
         <div>
-          <a href="https://open.spotify.com/user/bobbytate?si=o7vzMUBATySLoqtvACLexw" target="_blank" rel="noreferrer">He's listening to...</a>
+          <a href="https://open.spotify.com/user/bobbytate?si=o7vzMUBATySLoqtvACLexw" target="_blank" rel="noreferrer">He&apos;s listening to...</a>
         </div>
       </div>
     </footer>

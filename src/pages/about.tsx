@@ -117,7 +117,7 @@ export default function About() {
             />
           </Container>
           <Container modifier="Container--alignCenter">
-            <Text modifier="Text--medium">I'm a Software Developer living and working in Nashville, TN.</Text>
+            <Text modifier="Text--medium">I&apos;m a Software Developer living and working in Nashville, TN.</Text>
             <div style={{display: "flex", alignItems: "center", minWidth: "15rem"}}>
             <Image
               alt="Github Icon"
@@ -138,7 +138,7 @@ export default function About() {
       <Slice utilities="u-bg3 u-c2">
         <Block modifier="Block--withSpace">
           <Container modifier="Container--alignCenter">
-            <Text modifier="Text--small" styles={{maxWidth: "40rem"}}>I made <strong>Quick Wins With Code</strong> because I wanted to create a place where I could quickly share things I've learned about coding with others. I love when a programming concept "clicks", so I'm trying to pass that feeling on. <span role="img" aria-label="Smile Emoji">&#128522;</span></Text>
+            <Text modifier="Text--small" styles={{maxWidth: "40rem"}}>I made <strong>Quick Wins With Code</strong> because I wanted to create a place where I could quickly share things I&apos;ve learned about coding with others. I love when a programming concept &quot;clicks&quot;, so I&apos;m trying to pass that feeling on. <span role="img" aria-label="Smile Emoji">&#128522;</span></Text>
             <Link href={`/`}>Get back to the articles. Shame me for not writing more often.</Link>
           </Container>
         </Block>

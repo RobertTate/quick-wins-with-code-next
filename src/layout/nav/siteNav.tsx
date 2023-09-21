@@ -16,7 +16,7 @@ export default function SiteNav() {
     };
   };
 
-  const scrollDiff = (current, last) => {
+  const scrollDiff = (current: number, last: number) => {
     return current - last;
   }
 
