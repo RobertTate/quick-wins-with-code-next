@@ -35,7 +35,7 @@ export default function Home({ collection }: HomePageProps) {
       {articles.map((article, index) => {
         const styleIndex = index % 6;
         return (
-          <Teaser key={styleIndex} article={article} styleIndex={styleIndex} />
+          <Teaser key={`${index}-${styleIndex}`} article={article} styleIndex={styleIndex} />
         )
       })}
     </>

@@ -91,6 +91,7 @@ export default function About() {
           <Container modifier="Container--alignCenter">
           <Image
             alt="Bobby and Ada"
+            priority
             src={bobbyAda}
             sizes="100vw"
             style={{
