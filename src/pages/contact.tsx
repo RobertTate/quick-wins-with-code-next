@@ -35,6 +35,7 @@ export default function Contact() {
                 alt="Dev.to Icon"
                 src={devIcon}
                 sizes="100vw"
+                priority
                 style={{
                   width: '70px',
                   height: 'fit-content'
@@ -46,6 +47,7 @@ export default function Contact() {
                 alt="Github Icon"
                 src={githubIcon}
                 sizes="100vw"
+                priority
                 style={{
                   width: '70px',
                   height: 'fit-content',
@@ -59,6 +61,7 @@ export default function Contact() {
                 alt="LinkedIn Icon"
                 src={linkedInIcon}
                 sizes="100vw"
+                priority
                 style={{
                   width: '70px',
                   height: 'fit-content'
