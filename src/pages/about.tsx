@@ -12,7 +12,7 @@ import Button from "@/components/button";
 
 import bobbyAda from '../../public/images/bobby-ada.jpg';
 import bobbyMaine from '../../public/images/bobby-maine.jpg';
-import githubIcon from '../../public/images/github-icon.png';
+import githubIcon from '../../public/images/github-icon.svg';
 import dmcli from '../../public/images/dmcli.jpg';
 import djangoApp from '../../public/images/django-app.png';
 import blogProject from '../../public/images/blog-project.png';

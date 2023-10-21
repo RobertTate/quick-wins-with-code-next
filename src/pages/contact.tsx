@@ -6,9 +6,9 @@ import Slice from "@/components/slice";
 import Container from "@/components/container";
 import Text from "@/components/text";
 
-import githubIcon from '../../public/images/github-icon.png';
+import githubIcon from '../../public/images/github-icon.svg';
 import devIcon from '../../public/images/dev.svg';
-import linkedInIcon from '../../public/images/linkedin-icon-white.png';
+import linkedInIcon from '../../public/images/linkedin.svg';
 
 const customStyles = {
   display: "flex",
