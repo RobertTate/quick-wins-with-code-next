@@ -19,19 +19,10 @@ body {
   p {
     margin-block-start: 0;
     margin-block-end: $block-end-spacing;
+  }
 
-    a {
-      color: $anchor-color;
-      text-decoration: none;
-  
-      &:visited {
-        color: $anchor-color;
-      }
-  
-      &:hover {
-        font-weight: 600;
-      }
-    }
+  a {
+    text-decoration: none;
   }
 
   h1 {
@@ -124,5 +115,30 @@ body {
 
   &-c2 {
     color: $smoky-black;
+  }
+
+  &-special-link {
+    color: $special-link;
+
+    &:visited {
+      color: $special-link;
+    }
+
+    &:hover {
+      font-weight: 400;
+      color: $special-link-hover;
+    }
+
+    &--dark {
+      color: $special-link-dark;
+
+      &:visited {
+        color: $special-link-dark;
+      }
+
+      &:hover {
+        color: $special-link-dark-hover;
+      }
+    }
   }
 }

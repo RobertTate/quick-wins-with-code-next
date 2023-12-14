@@ -3,8 +3,10 @@ $white: #ffffffff;
 $smoky-black: #131112ff;
 $oxford-blue: #03123bff;
 $space-cadet: #28265eff;
+$space-cadet-bold: #4c45ff;
 $space-cadet-medium: #9591ff;
 $space-cadet-light: #d4d3ff;
+
 
 $blue-pantone: #1b16abff;
 
@@ -12,6 +14,9 @@ $blue-pantone: #1b16abff;
 $anchor-color: $blue-pantone;
 $special-link: $space-cadet-medium;
 $special-link-hover: $space-cadet-light;
+
+$special-link-dark: $space-cadet-bold;
+$special-link-dark-hover: $space-cadet-medium;
 
 // button hover
 $button-hover-color: rgba(255, 255, 255, 0.144);

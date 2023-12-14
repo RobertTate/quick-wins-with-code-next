@@ -13,6 +13,8 @@ import Button from "@/components/button";
 import bobbyAda from '../../public/images/bobby-ada.jpg';
 import bobbyMaine from '../../public/images/bobby-maine.jpg';
 import githubIcon from '../../public/images/github-icon.png';
+import dashboardMaker from '../../public/images/dashboard-maker.png';
+import reactHooksTutorial from '../../public/images/react-hooks-tutorial.png';
 import dmcli from '../../public/images/dmcli.jpg';
 import djangoApp from '../../public/images/django-app.png';
 import blogProject from '../../public/images/blog-project.png';
@@ -20,44 +22,40 @@ import oldWebsite from '../../public/images/old-website.png';
 
 export default function About() {
   const experienceList = [
+    "JavaScript",
+    "Python",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "React",
+    "Next.js",
+    "GraphQL",
+    "Redux",
+    "Redux-Saga",
     "HTML",
     "CSS",
     "Sass",
     "BEM",
-    "JavaScript",
-    "TypeScript",
-    "React",
     "React Native",
-    "Redux",
-    "Redux-Saga",
-    "Jest",
-    "Gatsby",
-    "Next.js",
+    "Lit",
     "Astro",
-    "Node.JS",
-    "Express",
+    "Gatsby",
+    "Django",
+    "Ruby on Rails",
+    "Jest",
+    "Pytest",
+    "CodeceptJS",
+    "Docker",
     "Firebase",
-    "GraphQL",
-    "Apollo",
+    "Vercel",
+    "Netlify",
     "Webpack",
     "Babel",
-    "Python",
-    "Django",
-    "Pytest",
-    "Ruby on Rails",
-    "Freemarker",
-    "Docker",
     "Optimizely",
-    "AWS Lambda",
-    "AWS Kinesis",
-    "AWS API Gateway",
     "Redis",
-    "MySQL",
-    "Heroku",
-    "Netlify",
-    "GoCD",
-    "Amazon Cloudfront",
-    "Magnolia CMS",
+    "MongoDB",
+    "Github Actions",
+    "AWS Services (Lambda, API Gateway, Kinesis, SQS, SNS, DynamoDB, S3, Evidently)",
   ]
 
   const experienceOutput = experienceList.map((item, index) => {
@@ -141,7 +139,7 @@ export default function About() {
         <Block modifier="Block--withSpace">
           <Container modifier="Container--alignCenter">
             <Text modifier="Text--small" styles={{maxWidth: "40rem"}}>I made <strong>Quick Wins With Code</strong> because I wanted to create a place where I could quickly share things I&apos;ve learned about coding with others. I love when a programming concept &quot;clicks&quot;, so I&apos;m trying to pass that feeling on. <span role="img" aria-label="Smile Emoji">&#128522;</span></Text>
-            <Link href={`/`}>Get back to the articles. Shame me for not writing more often.</Link>
+            <Link className='u-special-link--dark' href={`/`}>Get back to the articles. Shame me for not writing more often.</Link>
           </Container>
         </Block>
       </Slice>
@@ -162,6 +160,52 @@ export default function About() {
           <Container modifier="Container--alignCenter">
             <Text modifier="Text--xl">Projects</Text>
             <Text modifier="Text--xs">( Just a few right now. I spend most of my time developing stuff for Asurion. )</Text>
+          </Container>
+        </Block>
+      </Slice>
+
+      <Slice utilities="u-bg1 u-c1">
+        <Block modifier="Block--withSpace">
+          <Container modifier="Container--alignCenter">
+          <Image
+              alt="Image from Dashboard Maker App"
+              src={dashboardMaker}
+              sizes="100vw"
+              style={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: '18px',
+              }}
+            />
+          </Container>
+          <Container modifier="Container--alignCenter">
+            <Text modifier="Text--xl">Dashboard Maker</Text>
+            <Text modifier="Text--small">An extension for <a className='u-special-link' target="_blank" href="https://www.owlbear.rodeo/">Owlbeard Rodeo</a></Text>
+            <Button style={{marginBottom: "1rem"}} href="https://github.com/RobertTate/dashboard-maker" target="_blank">See The Code</Button>
+            <Button href="https://owlbear-dashboard-maker.vercel.app" target="_blank">Play With The App</Button>
+          </Container>
+        </Block>
+      </Slice>
+
+      <Slice utilities="u-bg3 u-c2">
+        <Block modifier="Block--withSpace">
+          <Container modifier="Container--alignCenter">
+            <Text modifier="Text--xl">React Hooks Tutorial</Text>
+            <Text modifier="Text--small">A site to help teach <a className='u-special-link--dark' target="_blank" href="https://react.dev">React</a> Hooks.</Text>
+            <Button style={{marginBottom: "1rem"}} modifier="Button--dark" href="https://github.com/RobertTate/react-hooks-demonstration" target="_blank">See The Code</Button>
+            <Button modifier="Button--dark" href="https://react-hooks-demonstration.vercel.app" target="_blank">See The App</Button>
+          </Container>
+          <Container modifier="Container--alignCenter">
+            <Image
+              alt="Image from my react hooks tutorial site"
+              src={reactHooksTutorial}
+              sizes="100vw"
+              style={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: '18px',
+              }}
+            />
           </Container>
         </Block>
       </Slice>
