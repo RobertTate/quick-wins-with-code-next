@@ -144,7 +144,7 @@ export default function About() {
             <Text modifier="Text--xl">I have experience with:</Text>
             <Text semantic="div" modifier="Text--small" utilities="u-spacing-2" styles={{maxWidth: "40rem"}}> {experienceOutput}
             </Text>
-            <Button href={`/images/Robert-Tate-Developer-Resume-2023.pdf`} target="_blank">Check Out My Resume</Button>
+            <Button href={`/images/Robert-Tate-Developer-Resume-2024.pdf`} target="_blank">Check Out My Resume</Button>
           </Container>
         </Block>
       </Slice>
