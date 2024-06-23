@@ -13,12 +13,9 @@ import Button from "@/components/button";
 import bobbyAda from '../../public/images/bobby-ada.jpg';
 import bobbyMaine from '../../public/images/bobby-maine.jpg';
 import githubIcon from '../../public/images/github-icon.png';
-import dashboardMaker from '../../public/images/dashboard-maker.png';
+import dashboardMakerDiceDemo from "../../public/images/DashboardMakerDicePreview.gif";
 import reactHooksTutorial from '../../public/images/react-hooks-tutorial.png';
 import dmcli from '../../public/images/dmcli.jpg';
-import djangoApp from '../../public/images/django-app.png';
-import blogProject from '../../public/images/blog-project.png';
-import oldWebsite from '../../public/images/old-website.png';
 
 export default function About() {
   const experienceList = [
@@ -169,7 +166,7 @@ export default function About() {
           <Container modifier="Container--alignCenter">
           <Image
               alt="Image from Dashboard Maker App"
-              src={dashboardMaker}
+              src={dashboardMakerDiceDemo}
               sizes="100vw"
               style={{
                 width: '100%',
@@ -180,7 +177,7 @@ export default function About() {
           </Container>
           <Container modifier="Container--alignCenter">
             <Text modifier="Text--xl">Dashboard Maker</Text>
-            <Text modifier="Text--small">An extension for <a className='u-special-link' target="_blank" href="https://www.owlbear.rodeo/">Owlbeard Rodeo</a></Text>
+            <Text modifier="Text--small">A D&D themed notetaking app for <a className='u-special-link' target="_blank" href="https://www.owlbear.rodeo/">Owlbeard Rodeo</a></Text>
             <Button style={{marginBottom: "1rem"}} href="https://github.com/RobertTate/dashboard-maker" target="_blank">See The Code</Button>
             <Button href="https://owlbear-dashboard-maker.vercel.app" target="_blank">Play With The App</Button>
           </Container>
@@ -226,74 +223,8 @@ export default function About() {
           </Container>
           <Container modifier="Container--alignCenter">
             <Text modifier="Text--xl">DCMLI</Text>
-            <Text modifier="Text--small">A Command Line Tool for Dungeon Masters.</Text>
+            <Text modifier="Text--small">A command line tool for dungeon masters.</Text>
             <Button href="https://www.npmjs.com/package/@robert-tate/dmcli" target="_blank">Check it out on npm</Button>
-          </Container>
-        </Block>
-      </Slice>
-
-      <Slice utilities="u-bg1 u-c1">
-        <Block modifier="Block--withSpace">
-          <Container modifier="Container--alignCenter">
-            <Text modifier="Text--xl">Django Task Manager</Text>
-            <Text modifier="Text--small">An app using Django as a REST API with a Sqlite Database, using React with Bootstrap and Reactstrap as the client, and using docker-compose to spin up multiple containers for local development.</Text>
-            <Button href="https://github.com/RobertTate/django-task-manager" target="_blank">Download it from Github</Button>
-          </Container>
-          <Container modifier="Container--alignCenter">
-          <Image
-              alt="Image from Django Task Manager App"
-              src={djangoApp}
-              sizes="100vw"
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '18px',
-              }}
-            />
-          </Container>
-        </Block>
-      </Slice>
-
-      <Slice utilities="u-bg3 u-c2">
-        <Block modifier="Block--withSpace">
-          <Container modifier="Container--alignCenter">
-            <Image
-              alt="Image from my Blog Project App"
-              src={blogProject}
-              sizes="100vw"
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '18px',
-              }}
-            />
-          </Container>
-          <Container modifier="Container--alignCenter">
-            <Text modifier="Text--xl">Blog App</Text>
-            <Text modifier="Text--small">A Node.js application using React, Express, MySQL, Passport, Bcrypt, Stripe, Mailgun, and Bootstrap.</Text>
-            <Button modifier="Button--dark" href="https://guarded-garden-27785.herokuapp.com/" target="_blank">Check out the site</Button>
-          </Container>
-        </Block>
-      </Slice>
-
-      <Slice utilities="u-bg2 u-c1">
-        <Block modifier="Block--withSpace">
-          <Container modifier="Container--alignCenter">
-            <Text modifier="Text--xl">A Walk Down Memory Lane</Text>
-            <Text modifier="Text--small">My first personal website - when I was fresh out of a code school in the summer of 2018.</Text>
-            <Button href="https://protected-springs-72451.herokuapp.com" target="_blank">Check out the site</Button>
-          </Container>
-          <Container modifier="Container--alignCenter">
-            <Image
-              alt="Image from my first portfolio website"
-              src={oldWebsite}
-              sizes="100vw"
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '18px',
-              }}
-            />
           </Container>
         </Block>
       </Slice>
