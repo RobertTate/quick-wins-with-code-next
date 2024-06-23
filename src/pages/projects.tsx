@@ -47,7 +47,7 @@ export default function About() {
           </Container>
           <Container modifier="Container--alignCenter">
             <Text modifier="Text--xl">Dashboard Maker</Text>
-            <Text modifier="Text--small">A D&D themed notetaking app for <a className='u-special-link' target="_blank" href="https://www.owlbear.rodeo/">Owlbeard Rodeo</a></Text>
+            <Text modifier="Text--small">A D&D themed notetaking app for <a className='u-special-link' target="_blank" href="https://www.owlbear.rodeo/">Owlbear Rodeo</a></Text>
             <Button style={{ marginBottom: "1rem" }} href="https://github.com/RobertTate/dashboard-maker" target="_blank">See The Code</Button>
             <Button href="https://owlbear-dashboard-maker.vercel.app" target="_blank">Play With The App</Button>
           </Container>
