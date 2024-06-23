@@ -47,11 +47,11 @@ export default function SiteNav() {
     <nav className={`${styles['SiteNav']} ${addVisibilityClass()}`}>
       <div className={`${styles['SiteNav-content']} o-content`}>
         <div className={`${styles['SiteNav-icon']}`}>
-          Q W W C
+          <Link href={`/`}>Q W W C</Link>
         </div>
         <div className={`${styles['SiteNav-links']}`}>
-          <Link href={`/`}>HOME</Link>
           <Link href={`/about`}>ABOUT</Link>
+          <Link href={`/projects`}>PROJECTS</Link>
           <Link href={`/contact`}>CONTACT</Link>
         </div>
       </div>
