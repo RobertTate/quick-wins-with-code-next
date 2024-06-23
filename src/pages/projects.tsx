@@ -24,8 +24,8 @@ export default function About() {
       <Slice modifier="Slice--hero" utilities="u-bg3 u-c2">
         <Block modifier="Block--withSpace">
           <Container modifier="Container--alignCenter">
-            <Text modifier="Text--xl">Projects</Text>
-            <Text modifier="Text--small">A smattering of home grown passion projects.</Text>
+            <Text semantic="h1" modifier="Text--xl" utilities="u-spacing-1">Projects</Text>
+            <Text modifier="Text--medium">A smattering of home grown passion projects.</Text>
             <DownArrow />
           </Container>
         </Block>
