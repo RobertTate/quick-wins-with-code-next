@@ -35,9 +35,9 @@ export default function SiteNav() {
         setVisible(true);
       }
     }
-  
+
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     }
@@ -47,7 +47,20 @@ export default function SiteNav() {
     <nav className={`${styles['SiteNav']} ${addVisibilityClass()}`}>
       <div className={`${styles['SiteNav-content']} o-content`}>
         <div className={`${styles['SiteNav-icon']}`}>
-          <Link href={`/`}>Q W W C</Link>
+          <Link href={`/`}>
+            <div className={`${styles['SiteNav-logo']}`}>
+              <svg className={`${styles['SiteNav-logo--desk']}`} width="100.37" height="32.89" viewBox="0 0 100.37 32.89" xmlns="http://www.w3.org/2000/svg">
+                <text x="50%" y="50%" dy=".40em" text-anchor="middle">
+                  Q W W C
+                </text>
+              </svg>
+              <svg className={`${styles['SiteNav-logo--palm']}`} width="70.37" height="26.29" viewBox="0 0 70.37 26.29" xmlns="http://www.w3.org/2000/svg">
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                  Q W W C
+                </text>
+              </svg>
+            </div>
+          </Link>
         </div>
         <div className={`${styles['SiteNav-links']}`}>
           <Link href={`/about`}>ABOUT</Link>

@@ -11,8 +11,8 @@ import Button from "@/components/button";
 import DownArrow from '@/components/downArrow';
 
 import dashboardMakerDiceDemo from "../../public/images/DashboardMakerDicePreview.gif";
-import reactHooksTutorial from '../../public/images/react-hooks-tutorial.png';
-import dmcli from '../../public/images/dmcli.jpg';
+import reactHooksDemo from '../../public/images/ReactHooksDemo.gif';
+import dmcli from '../../public/images/DMCLIPreview.gif';
 
 export default function About() {
   return (
@@ -65,7 +65,7 @@ export default function About() {
           <Container modifier="Container--alignCenter">
             <Image
               alt="Image from my react hooks tutorial site"
-              src={reactHooksTutorial}
+              src={reactHooksDemo}
               sizes="100vw"
               style={{
                 width: '100%',

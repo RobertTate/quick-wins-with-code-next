@@ -81,3 +81,16 @@
     -webkit-transform: translateY(0%);
   }
 }
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(212,211,255,0); stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+	}
+	70%  {fill: rgba(212,211,255,0); stroke: rgba(255,255,255,1); }
+	80%  {fill: rgba(212,211,255,0); stroke: rgba(255,255,255,1); stroke-width: 1; }
+	100% {
+		fill: rgba(149, 145, 255, 1); stroke: rgba(149, 145, 255, 1); stroke-width: 0;
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0;
+	}
+}

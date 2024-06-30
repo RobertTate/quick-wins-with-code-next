@@ -2,6 +2,7 @@
 @import '../../partials/fontSizes.scss';
 @import '../../partials/sitePalette.scss';
 @import '../../partials/boxShadows.scss';
+@import '../../partials/animations.scss';
 
 .SiteNav {
   display: block;
@@ -25,9 +26,11 @@
     display: flex;
     justify-content: space-between;
     font-size: $font-size-small;
+    padding: 0.5rem 1rem;
 
     @include lap-up {
       font-size: $font-size-medium;
+      padding: 0.5rem 2rem;
     }
   }
 
@@ -64,4 +67,34 @@
   &-content a:last-child {
     padding: 0;
   }
+
+  &-logo {
+    display: flex;
+
+    &--desk {
+      display: none;
+    }
+
+    & svg text {
+      animation: stroke 3s 1 alternate;
+      stroke-width: 0;
+      fill: $special-link;
+    }
+
+    & svg text:hover {
+      fill: $special-link-hover;
+    }
+
+    @include lap-up {
+      &--desk {
+        display: block;
+      }
+
+      &--palm {
+        display: none;
+      }
+    }
+  }
 }
+
+
