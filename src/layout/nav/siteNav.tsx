@@ -50,12 +50,12 @@ export default function SiteNav() {
           <Link href={`/`}>
             <div className={`${styles['SiteNav-logo']}`}>
               <svg className={`${styles['SiteNav-logo--desk']}`} width="100.37" height="32.89" viewBox="0 0 100.37 32.89" xmlns="http://www.w3.org/2000/svg">
-                <text x="50%" y="50%" dy=".40em" text-anchor="middle">
+                <text x="50%" y="50%" dy=".40em" textAnchor="middle">
                   Q W W C
                 </text>
               </svg>
               <svg className={`${styles['SiteNav-logo--palm']}`} width="70.37" height="26.29" viewBox="0 0 70.37 26.29" xmlns="http://www.w3.org/2000/svg">
-                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                <text x="50%" y="50%" dy=".35em" textAnchor="middle">
                   Q W W C
                 </text>
               </svg>

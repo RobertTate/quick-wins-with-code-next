@@ -4,6 +4,7 @@ import '../styles/globals.scss';
 
 import Head from "next/head";
 import GlobalWrapper from '@/layout/globalWrapper';
+import { Analytics } from '@vercel/analytics/react';
 
 import type { AppProps } from 'next/app';
 
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalWrapper>
         <Component {...pageProps} />
       </GlobalWrapper>
+      <Analytics />
     </>
   );
 }
